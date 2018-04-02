@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TCPSocket.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    _serverHost = @"www.baidu.com";
+//    _serverPort = 80;
+    [[TCPSocket shared] connectToHost:@"115.239.210.26" onPort:80 timeout:-1 completion:^(NSError *error) {
+        
+    }];
 }
 
 
