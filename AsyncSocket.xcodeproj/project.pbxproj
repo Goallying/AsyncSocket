@@ -14,6 +14,8 @@
 		550F15B62071FCAE00FAA07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550F15B52071FCAE00FAA07F /* Assets.xcassets */; };
 		550F15B92071FCAE00FAA07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550F15B72071FCAE00FAA07F /* LaunchScreen.storyboard */; };
 		550F15BC2071FCAE00FAA07F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F15BB2071FCAE00FAA07F /* main.m */; };
+		AE42DFFB207256650070B3FD /* TCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42DFFA207256650070B3FD /* TCPSocket.m */; };
+		AE42DFFE207256720070B3FD /* UDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42DFFD207256720070B3FD /* UDPSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		550F15BA2071FCAE00FAA07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550F15BB2071FCAE00FAA07F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7508D280D3290B4E11D5DD3C /* Pods-AsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket.release.xcconfig"; sourceTree = "<group>"; };
+		AE42DFF9207256650070B3FD /* TCPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPSocket.h; sourceTree = "<group>"; };
+		AE42DFFA207256650070B3FD /* TCPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPSocket.m; sourceTree = "<group>"; };
+		AE42DFFC207256720070B3FD /* UDPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPSocket.h; sourceTree = "<group>"; };
+		AE42DFFD207256720070B3FD /* UDPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPSocket.m; sourceTree = "<group>"; };
 		D1B16D7D54C577D0A9E79B39 /* Pods-AsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket.debug.xcconfig"; sourceTree = "<group>"; };
 		E0B48048B6D1291CC91F6E7B /* libPods-AsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AsyncSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +75,10 @@
 				550F15AD2071FCAE00FAA07F /* AppDelegate.m */,
 				550F15AF2071FCAE00FAA07F /* ViewController.h */,
 				550F15B02071FCAE00FAA07F /* ViewController.m */,
+				AE42DFF9207256650070B3FD /* TCPSocket.h */,
+				AE42DFFA207256650070B3FD /* TCPSocket.m */,
+				AE42DFFC207256720070B3FD /* UDPSocket.h */,
+				AE42DFFD207256720070B3FD /* UDPSocket.m */,
 				550F15B22071FCAE00FAA07F /* Main.storyboard */,
 				550F15B52071FCAE00FAA07F /* Assets.xcassets */,
 				550F15B72071FCAE00FAA07F /* LaunchScreen.storyboard */,
@@ -222,6 +232,8 @@
 			files = (
 				550F15B12071FCAE00FAA07F /* ViewController.m in Sources */,
 				550F15BC2071FCAE00FAA07F /* main.m in Sources */,
+				AE42DFFE207256720070B3FD /* UDPSocket.m in Sources */,
+				AE42DFFB207256650070B3FD /* TCPSocket.m in Sources */,
 				550F15AE2071FCAE00FAA07F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsyncSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AsyncSocket.AsyncSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,6 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsyncSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AsyncSocket.AsyncSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
