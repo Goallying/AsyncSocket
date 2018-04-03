@@ -1,6 +1,9 @@
-platform:ios,’8.0’
-target “AsyncSocket” do
 
-pod 'CocoaAsyncSocket', '~> 7.6.2'
-
+use_frameworks!
+platform :ios, '8.0'
+targetsArray = ['SocketServer', 'AsyncSocket']
+targetsArray.each do |t|
+    target t do
+        pod 'CocoaAsyncSocket', '~> 7.6.2'
+    end
 end

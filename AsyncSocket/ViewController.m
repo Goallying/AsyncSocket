@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "TCPSocket.h"
+#import "CToast.h"
+#define IPAddr  @"127.0.0.1"
+#define Port    1234
 
 @interface ViewController ()
 
@@ -21,16 +24,16 @@
     
 //    _serverHost = @"www.baidu.com";
 //    _serverPort = 80;
-    [[TCPSocket shared] connectToHost:@"115.239.210.26" onPort:80 timeout:-1 completion:^(NSError *error) {
-        
+    [[TCPSocket shared] connectToHost:IPAddr onPort:Port timeout:-1 completion:^(NSError *error) {
+        if (!error) {
+            [CToast showWithText:@"连接成功" duration:3];
+        }else{
+            [CToast showWithText:error.domain];
+        }
     }];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

@@ -9,6 +9,9 @@
 #import "TCPSocket.h"
 #import "GCDAsyncSocket.h"
 
+#define ReconnectTimes 3
+#define HeartBeatTag  @"beatString"
+
 @interface TCPSocket()<GCDAsyncSocketDelegate>
 
 @property (nonatomic ,strong)GCDAsyncSocket * tcpSocket ;
@@ -36,10 +39,12 @@ static TCPSocket * _tcpSocketManager = nil ;
 
 - (instancetype)init{
     if (self = [super init]) {
-        _tcpSocket = [[GCDAsyncSocket alloc]initWithSocketQueue:dispatch_get_main_queue()];
+        
+        _tcpSocket = [[GCDAsyncSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     }
     return self ;
 }
+
 #pragma mark -- Connect
 - (void)connectToHost:(NSString *)host
                onPort:(uint16_t)port
@@ -84,7 +89,6 @@ static TCPSocket * _tcpSocketManager = nil ;
     if (_cmp) {
         _cmp(nil);
     }
-    
     [self installHeartBeat];
 }
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
@@ -95,8 +99,16 @@ static TCPSocket * _tcpSocketManager = nil ;
     [self disconnect];
     
 }
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
+    
+    NSString *secretStr  = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    NSLog(@"didReadData == %@",secretStr);
 
+}
+- (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag{
+    [_tcpSocket readDataToData:[GCDAsyncSocket LFData] withTimeout:-1 maxLength:0 tag:0];
 
+}
 #pragma mark -- Connect Heart Beat
 - (void)installHeartBeat {
     
@@ -105,7 +117,8 @@ static TCPSocket * _tcpSocketManager = nil ;
     
 }
 - (void)heartBeat:(NSTimer *)timer {
-    NSString * beatString = [NSString stringWithFormat:@"%@",@"beatString"];
+    
+    NSString * beatString = [NSString stringWithFormat:@"%@",HeartBeatTag];
     NSData * beatData = [beatString dataUsingEncoding:NSUTF8StringEncoding];
     [_tcpSocket writeData:beatData withTimeout:-1 tag:0];
 }

@@ -16,7 +16,22 @@
 		550F15BC2071FCAE00FAA07F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F15BB2071FCAE00FAA07F /* main.m */; };
 		AE42DFFB207256650070B3FD /* TCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42DFFA207256650070B3FD /* TCPSocket.m */; };
 		AE42DFFE207256720070B3FD /* UDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42DFFD207256720070B3FD /* UDPSocket.m */; };
+		AE73B7222073A3DB002F1996 /* CToast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73B7212073A3DA002F1996 /* CToast.m */; };
+		AE73B75C2073BCC3002F1996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73B75B2073BCC3002F1996 /* main.m */; };
+		AE73B7622073BE34002F1996 /* TCPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73B7602073BE33002F1996 /* TCPSocketServer.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE73B7572073BCC3002F1996 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		550F15A92071FCAE00FAA07F /* AsyncSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +49,12 @@
 		AE42DFFA207256650070B3FD /* TCPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPSocket.m; sourceTree = "<group>"; };
 		AE42DFFC207256720070B3FD /* UDPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPSocket.h; sourceTree = "<group>"; };
 		AE42DFFD207256720070B3FD /* UDPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPSocket.m; sourceTree = "<group>"; };
+		AE73B7202073A3DA002F1996 /* CToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CToast.h; sourceTree = "<group>"; };
+		AE73B7212073A3DA002F1996 /* CToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CToast.m; sourceTree = "<group>"; };
+		AE73B7592073BCC3002F1996 /* SocketServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SocketServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE73B75B2073BCC3002F1996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE73B7602073BE33002F1996 /* TCPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSocketServer.m; sourceTree = "<group>"; };
+		AE73B7612073BE34002F1996 /* TCPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSocketServer.h; sourceTree = "<group>"; };
 		D1B16D7D54C577D0A9E79B39 /* Pods-AsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket.debug.xcconfig"; sourceTree = "<group>"; };
 		E0B48048B6D1291CC91F6E7B /* libPods-AsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AsyncSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE73B7562073BCC3002F1996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				550F15AB2071FCAE00FAA07F /* AsyncSocket */,
+				AE73B75A2073BCC3002F1996 /* SocketServer */,
 				550F15AA2071FCAE00FAA07F /* Products */,
 				8B39B41A8F470DFEBB20D311 /* Pods */,
 				681353B65DD4C100AC7BD4EB /* Frameworks */,
@@ -64,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				550F15A92071FCAE00FAA07F /* AsyncSocket.app */,
+				AE73B7592073BCC3002F1996 /* SocketServer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +101,7 @@
 		550F15AB2071FCAE00FAA07F /* AsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
+				AE73B71F2073A3DA002F1996 /* CToast */,
 				550F15AC2071FCAE00FAA07F /* AppDelegate.h */,
 				550F15AD2071FCAE00FAA07F /* AppDelegate.m */,
 				550F15AF2071FCAE00FAA07F /* ViewController.h */,
@@ -105,6 +136,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AE73B71F2073A3DA002F1996 /* CToast */ = {
+			isa = PBXGroup;
+			children = (
+				AE73B7202073A3DA002F1996 /* CToast.h */,
+				AE73B7212073A3DA002F1996 /* CToast.m */,
+			);
+			path = CToast;
+			sourceTree = "<group>";
+		};
+		AE73B75A2073BCC3002F1996 /* SocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				AE73B75B2073BCC3002F1996 /* main.m */,
+				AE73B7612073BE34002F1996 /* TCPSocketServer.h */,
+				AE73B7602073BE33002F1996 /* TCPSocketServer.m */,
+			);
+			path = SocketServer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +178,23 @@
 			productReference = 550F15A92071FCAE00FAA07F /* AsyncSocket.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AE73B7582073BCC3002F1996 /* SocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE73B75D2073BCC3002F1996 /* Build configuration list for PBXNativeTarget "SocketServer" */;
+			buildPhases = (
+				AE73B7552073BCC3002F1996 /* Sources */,
+				AE73B7562073BCC3002F1996 /* Frameworks */,
+				AE73B7572073BCC3002F1996 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketServer;
+			productName = SocketServer;
+			productReference = AE73B7592073BCC3002F1996 /* SocketServer */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -138,6 +205,10 @@
 				ORGANIZATIONNAME = "朱来飞";
 				TargetAttributes = {
 					550F15A82071FCAE00FAA07F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AE73B7582073BCC3002F1996 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -157,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				550F15A82071FCAE00FAA07F /* AsyncSocket */,
+				AE73B7582073BCC3002F1996 /* SocketServer */,
 			);
 		};
 /* End PBXProject section */
@@ -231,10 +303,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				550F15B12071FCAE00FAA07F /* ViewController.m in Sources */,
+				AE73B7222073A3DB002F1996 /* CToast.m in Sources */,
 				550F15BC2071FCAE00FAA07F /* main.m in Sources */,
 				AE42DFFE207256720070B3FD /* UDPSocket.m in Sources */,
 				AE42DFFB207256650070B3FD /* TCPSocket.m in Sources */,
 				550F15AE2071FCAE00FAA07F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE73B7552073BCC3002F1996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE73B75C2073BCC3002F1996 /* main.m in Sources */,
+				AE73B7622073BE34002F1996 /* TCPSocketServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +476,28 @@
 			};
 			name = Release;
 		};
+		AE73B75E2073BCC3002F1996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE73B75F2073BCC3002F1996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +515,15 @@
 			buildConfigurations = (
 				550F15C02071FCAE00FAA07F /* Debug */,
 				550F15C12071FCAE00FAA07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE73B75D2073BCC3002F1996 /* Build configuration list for PBXNativeTarget "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE73B75E2073BCC3002F1996 /* Debug */,
+				AE73B75F2073BCC3002F1996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
