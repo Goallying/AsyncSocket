@@ -12,7 +12,7 @@
 
 + (instancetype)shared ;
 
-- (void)startServer ;
+- (void)startServerOnport:(NSInteger)port ;
 - (void)sendText:(NSString *)txt ;
 
 @property (nonatomic ,copy)void (^receiveMessage)(NSString * msg) ;

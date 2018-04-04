@@ -9,7 +9,6 @@
 #import "TCPSocketServer.h"
 #import "GCDAsyncSocket.h"
 
-#define Port 1234
 #define HeartBeatTag  @"beatString"
 
 static TCPSocketServer * _tcpSocketServer = nil ;
@@ -40,9 +39,9 @@ static TCPSocketServer * _tcpSocketServer = nil ;
     }
     return self ;
 }
-- (void)startServer {
+- (void)startServerOnport:(NSInteger)port {
     NSError * error = nil ;
-    [_serverSocket acceptOnPort:Port error:&error];
+    [_serverSocket acceptOnPort:port error:&error];
     
     if (!error) {
         NSLog(@"服务开启成功");

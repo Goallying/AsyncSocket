@@ -12,6 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *ClientTF;
 @property (weak, nonatomic) IBOutlet UITextField *ServerTF;
+@property (weak, nonatomic) IBOutlet UITextField *portTF;
+
+@property (weak, nonatomic) IBOutlet UIButton *startServerBtn;
 
 @end
 
@@ -21,20 +24,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [[TCPSocketServer shared] startServer];
     
     [[TCPSocketServer shared] setReceiveMessage:^(NSString *msg) {
         _ClientTF.text = msg;
     }];
     
+    [self.startServerBtn addTarget:self action:@selector(startServer) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+- (void)startServer {
+    [[TCPSocketServer shared]startServerOnport:[_portTF.text integerValue]];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    
-}
 - (IBAction)sendToClient:(UIButton *)sender {
     [[TCPSocketServer shared] sendText:_ServerTF.text];
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    
 }
 
 @end
