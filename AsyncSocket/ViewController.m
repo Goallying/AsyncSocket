@@ -13,6 +13,8 @@
 #define Port    1234
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *serverTF;
+@property (weak, nonatomic) IBOutlet UITextField *clientTF;
 
 @end
 
@@ -22,8 +24,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    _serverHost = @"www.baidu.com";
-//    _serverPort = 80;
     [[TCPSocket shared] connectToHost:IPAddr onPort:Port timeout:-1 completion:^(NSError *error) {
         if (!error) {
             [CToast showWithText:@"连接成功" duration:3];
@@ -31,9 +31,19 @@
             [CToast showWithText:error.domain];
         }
     }];
+    
+    [[TCPSocket shared] setReceiveMessage:^(NSString *msg) {
+        _serverTF.text = msg ;
+    }];
 }
 
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [[TCPSocket shared] sendText:_clientTF.text];
+    
+}
 
 
 @end

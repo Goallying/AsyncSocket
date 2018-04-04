@@ -89,7 +89,8 @@ static TCPSocket * _tcpSocketManager = nil ;
     if (_cmp) {
         _cmp(nil);
     }
-    [self installHeartBeat];
+    [_tcpSocket readDataWithTimeout:-1 tag:0];
+//    [self installHeartBeat];
 }
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
     
@@ -101,14 +102,18 @@ static TCPSocket * _tcpSocketManager = nil ;
 }
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
     
-    NSString *secretStr  = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    NSString *secretStr  = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"didReadData == %@",secretStr);
+    [_tcpSocket readDataWithTimeout:-1 tag:0];
 
+    if (self.receiveMessage) {
+        self.receiveMessage(secretStr);
+    }
 }
-- (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag{
-    [_tcpSocket readDataToData:[GCDAsyncSocket LFData] withTimeout:-1 maxLength:0 tag:0];
-
-}
+//- (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag{
+//    [_tcpSocket readDataToData:[GCDAsyncSocket LFData] withTimeout:-1 maxLength:0 tag:0];
+//
+//}
 #pragma mark -- Connect Heart Beat
 - (void)installHeartBeat {
     

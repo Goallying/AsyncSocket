@@ -7,33 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B0BA9E647F04046892E52B0 /* libPods-AsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B48048B6D1291CC91F6E7B /* libPods-AsyncSocket.a */; };
+		2A83E0CAD133DBC9F7B7FE5B /* Pods_AsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A1C41CEE6FB159863078C3 /* Pods_AsyncSocket.framework */; };
+		4A7526A9EB20DEF157E4A62E /* Pods_AsyncSocketServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADD552DB0A669376B4309C8 /* Pods_AsyncSocketServer.framework */; };
 		550F15AE2071FCAE00FAA07F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F15AD2071FCAE00FAA07F /* AppDelegate.m */; };
 		550F15B12071FCAE00FAA07F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F15B02071FCAE00FAA07F /* ViewController.m */; };
 		550F15B42071FCAE00FAA07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550F15B22071FCAE00FAA07F /* Main.storyboard */; };
 		550F15B62071FCAE00FAA07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550F15B52071FCAE00FAA07F /* Assets.xcassets */; };
 		550F15B92071FCAE00FAA07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550F15B72071FCAE00FAA07F /* LaunchScreen.storyboard */; };
 		550F15BC2071FCAE00FAA07F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F15BB2071FCAE00FAA07F /* main.m */; };
+		55D720C42074635700CA3DB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D720C32074635700CA3DB8 /* AppDelegate.m */; };
+		55D720C72074635700CA3DB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D720C62074635700CA3DB8 /* ViewController.m */; };
+		55D720CA2074635700CA3DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D720C82074635700CA3DB8 /* Main.storyboard */; };
+		55D720CC2074635700CA3DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D720CB2074635700CA3DB8 /* Assets.xcassets */; };
+		55D720CF2074635700CA3DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D720CD2074635700CA3DB8 /* LaunchScreen.storyboard */; };
+		55D720D22074635700CA3DB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D720D12074635700CA3DB8 /* main.m */; };
+		55D720D82074636200CA3DB8 /* TCPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D720D72074636200CA3DB8 /* TCPSocketServer.m */; };
 		AE42DFFB207256650070B3FD /* TCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42DFFA207256650070B3FD /* TCPSocket.m */; };
 		AE42DFFE207256720070B3FD /* UDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42DFFD207256720070B3FD /* UDPSocket.m */; };
 		AE73B7222073A3DB002F1996 /* CToast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73B7212073A3DA002F1996 /* CToast.m */; };
-		AE73B75C2073BCC3002F1996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73B75B2073BCC3002F1996 /* main.m */; };
-		AE73B7622073BE34002F1996 /* TCPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE73B7602073BE33002F1996 /* TCPSocketServer.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AE73B7572073BCC3002F1996 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		4ADD552DB0A669376B4309C8 /* Pods_AsyncSocketServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncSocketServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		550F15A92071FCAE00FAA07F /* AsyncSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550F15AC2071FCAE00FAA07F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		550F15AD2071FCAE00FAA07F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,19 +39,32 @@
 		550F15B82071FCAE00FAA07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		550F15BA2071FCAE00FAA07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550F15BB2071FCAE00FAA07F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55D720C02074635700CA3DB8 /* AsyncSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55D720C22074635700CA3DB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55D720C32074635700CA3DB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55D720C52074635700CA3DB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55D720C62074635700CA3DB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		55D720C92074635700CA3DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55D720CB2074635700CA3DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55D720CE2074635700CA3DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55D720D02074635700CA3DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D720D12074635700CA3DB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55D720D62074636200CA3DB8 /* TCPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSocketServer.h; sourceTree = "<group>"; };
+		55D720D72074636200CA3DB8 /* TCPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSocketServer.m; sourceTree = "<group>"; };
+		681C8D5CE5510420F6C2BF9B /* Pods-AsyncSocketServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocketServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocketServer/Pods-AsyncSocketServer.release.xcconfig"; sourceTree = "<group>"; };
+		68A1C41CEE6FB159863078C3 /* Pods_AsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7508D280D3290B4E11D5DD3C /* Pods-AsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket.release.xcconfig"; sourceTree = "<group>"; };
+		82989BDAB09D12ECBD7E2CFA /* Pods-SocketServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocketServer/Pods-SocketServer.debug.xcconfig"; sourceTree = "<group>"; };
+		8649793E499FE5580B906E62 /* Pods_SocketServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C7DA20171F1C46A09A192C /* Pods-SocketServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocketServer/Pods-SocketServer.release.xcconfig"; sourceTree = "<group>"; };
 		AE42DFF9207256650070B3FD /* TCPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPSocket.h; sourceTree = "<group>"; };
 		AE42DFFA207256650070B3FD /* TCPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPSocket.m; sourceTree = "<group>"; };
 		AE42DFFC207256720070B3FD /* UDPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPSocket.h; sourceTree = "<group>"; };
 		AE42DFFD207256720070B3FD /* UDPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPSocket.m; sourceTree = "<group>"; };
 		AE73B7202073A3DA002F1996 /* CToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CToast.h; sourceTree = "<group>"; };
 		AE73B7212073A3DA002F1996 /* CToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CToast.m; sourceTree = "<group>"; };
-		AE73B7592073BCC3002F1996 /* SocketServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SocketServer; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE73B75B2073BCC3002F1996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE73B7602073BE33002F1996 /* TCPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSocketServer.m; sourceTree = "<group>"; };
-		AE73B7612073BE34002F1996 /* TCPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSocketServer.h; sourceTree = "<group>"; };
+		C44AA12EE1EFD2B2281A3BB5 /* Pods-AsyncSocketServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocketServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocketServer/Pods-AsyncSocketServer.debug.xcconfig"; sourceTree = "<group>"; };
 		D1B16D7D54C577D0A9E79B39 /* Pods-AsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket.debug.xcconfig"; sourceTree = "<group>"; };
-		E0B48048B6D1291CC91F6E7B /* libPods-AsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AsyncSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +72,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0BA9E647F04046892E52B0 /* libPods-AsyncSocket.a in Frameworks */,
+				2A83E0CAD133DBC9F7B7FE5B /* Pods_AsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE73B7562073BCC3002F1996 /* Frameworks */ = {
+		55D720BD2074635700CA3DB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7526A9EB20DEF157E4A62E /* Pods_AsyncSocketServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				550F15AB2071FCAE00FAA07F /* AsyncSocket */,
-				AE73B75A2073BCC3002F1996 /* SocketServer */,
+				55D720C12074635700CA3DB8 /* AsyncSocketServer */,
 				550F15AA2071FCAE00FAA07F /* Products */,
 				8B39B41A8F470DFEBB20D311 /* Pods */,
 				681353B65DD4C100AC7BD4EB /* Frameworks */,
@@ -93,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				550F15A92071FCAE00FAA07F /* AsyncSocket.app */,
-				AE73B7592073BCC3002F1996 /* SocketServer */,
+				55D720C02074635700CA3DB8 /* AsyncSocketServer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,10 +128,30 @@
 			path = AsyncSocket;
 			sourceTree = "<group>";
 		};
+		55D720C12074635700CA3DB8 /* AsyncSocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				55D720C22074635700CA3DB8 /* AppDelegate.h */,
+				55D720C32074635700CA3DB8 /* AppDelegate.m */,
+				55D720D62074636200CA3DB8 /* TCPSocketServer.h */,
+				55D720D72074636200CA3DB8 /* TCPSocketServer.m */,
+				55D720C52074635700CA3DB8 /* ViewController.h */,
+				55D720C62074635700CA3DB8 /* ViewController.m */,
+				55D720C82074635700CA3DB8 /* Main.storyboard */,
+				55D720CB2074635700CA3DB8 /* Assets.xcassets */,
+				55D720CD2074635700CA3DB8 /* LaunchScreen.storyboard */,
+				55D720D02074635700CA3DB8 /* Info.plist */,
+				55D720D12074635700CA3DB8 /* main.m */,
+			);
+			path = AsyncSocketServer;
+			sourceTree = "<group>";
+		};
 		681353B65DD4C100AC7BD4EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0B48048B6D1291CC91F6E7B /* libPods-AsyncSocket.a */,
+				68A1C41CEE6FB159863078C3 /* Pods_AsyncSocket.framework */,
+				8649793E499FE5580B906E62 /* Pods_SocketServer.framework */,
+				4ADD552DB0A669376B4309C8 /* Pods_AsyncSocketServer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +161,10 @@
 			children = (
 				D1B16D7D54C577D0A9E79B39 /* Pods-AsyncSocket.debug.xcconfig */,
 				7508D280D3290B4E11D5DD3C /* Pods-AsyncSocket.release.xcconfig */,
+				82989BDAB09D12ECBD7E2CFA /* Pods-SocketServer.debug.xcconfig */,
+				A3C7DA20171F1C46A09A192C /* Pods-SocketServer.release.xcconfig */,
+				C44AA12EE1EFD2B2281A3BB5 /* Pods-AsyncSocketServer.debug.xcconfig */,
+				681C8D5CE5510420F6C2BF9B /* Pods-AsyncSocketServer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -143,16 +176,6 @@
 				AE73B7212073A3DA002F1996 /* CToast.m */,
 			);
 			path = CToast;
-			sourceTree = "<group>";
-		};
-		AE73B75A2073BCC3002F1996 /* SocketServer */ = {
-			isa = PBXGroup;
-			children = (
-				AE73B75B2073BCC3002F1996 /* main.m */,
-				AE73B7612073BE34002F1996 /* TCPSocketServer.h */,
-				AE73B7602073BE33002F1996 /* TCPSocketServer.m */,
-			);
-			path = SocketServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,22 +201,25 @@
 			productReference = 550F15A92071FCAE00FAA07F /* AsyncSocket.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE73B7582073BCC3002F1996 /* SocketServer */ = {
+		55D720BF2074635700CA3DB8 /* AsyncSocketServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE73B75D2073BCC3002F1996 /* Build configuration list for PBXNativeTarget "SocketServer" */;
+			buildConfigurationList = 55D720D32074635700CA3DB8 /* Build configuration list for PBXNativeTarget "AsyncSocketServer" */;
 			buildPhases = (
-				AE73B7552073BCC3002F1996 /* Sources */,
-				AE73B7562073BCC3002F1996 /* Frameworks */,
-				AE73B7572073BCC3002F1996 /* CopyFiles */,
+				208DBF97AE43B9F656E1C3C9 /* [CP] Check Pods Manifest.lock */,
+				55D720BC2074635700CA3DB8 /* Sources */,
+				55D720BD2074635700CA3DB8 /* Frameworks */,
+				55D720BE2074635700CA3DB8 /* Resources */,
+				457F745E1F80544603967A8B /* [CP] Embed Pods Frameworks */,
+				4A0DF056321F7C4DBA97BD42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SocketServer;
-			productName = SocketServer;
-			productReference = AE73B7592073BCC3002F1996 /* SocketServer */;
-			productType = "com.apple.product-type.tool";
+			name = AsyncSocketServer;
+			productName = AsyncSocketServer;
+			productReference = 55D720C02074635700CA3DB8 /* AsyncSocketServer.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -208,7 +234,7 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					AE73B7582073BCC3002F1996 = {
+					55D720BF2074635700CA3DB8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -228,7 +254,7 @@
 			projectRoot = "";
 			targets = (
 				550F15A82071FCAE00FAA07F /* AsyncSocket */,
-				AE73B7582073BCC3002F1996 /* SocketServer */,
+				55D720BF2074635700CA3DB8 /* AsyncSocketServer */,
 			);
 		};
 /* End PBXProject section */
@@ -244,9 +270,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55D720BE2074635700CA3DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D720CF2074635700CA3DB8 /* LaunchScreen.storyboard in Resources */,
+				55D720CC2074635700CA3DB8 /* Assets.xcassets in Resources */,
+				55D720CA2074635700CA3DB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		208DBF97AE43B9F656E1C3C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsyncSocketServer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		32BC6598132A229283B606FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +314,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		457F745E1F80544603967A8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AsyncSocketServer/Pods-AsyncSocketServer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncSocketServer/Pods-AsyncSocketServer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A0DF056321F7C4DBA97BD42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncSocketServer/Pods-AsyncSocketServer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6BB9F4A2178CA558E82D44C6 /* [CP] Check Pods Manifest.lock */ = {
@@ -286,9 +373,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AsyncSocket/Pods-AsyncSocket-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -311,12 +401,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE73B7552073BCC3002F1996 /* Sources */ = {
+		55D720BC2074635700CA3DB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE73B75C2073BCC3002F1996 /* main.m in Sources */,
-				AE73B7622073BE34002F1996 /* TCPSocketServer.m in Sources */,
+				55D720C72074635700CA3DB8 /* ViewController.m in Sources */,
+				55D720D22074635700CA3DB8 /* main.m in Sources */,
+				55D720C42074635700CA3DB8 /* AppDelegate.m in Sources */,
+				55D720D82074636200CA3DB8 /* TCPSocketServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +427,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				550F15B82071FCAE00FAA07F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		55D720C82074635700CA3DB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55D720C92074635700CA3DB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55D720CD2074635700CA3DB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55D720CE2074635700CA3DB8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -452,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 328GX9EB5V;
 				INFOPLIST_FILE = AsyncSocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,6 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 328GX9EB5V;
 				INFOPLIST_FILE = AsyncSocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -476,25 +586,31 @@
 			};
 			name = Release;
 		};
-		AE73B75E2073BCC3002F1996 /* Debug */ = {
+		55D720D42074635700CA3DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44AA12EE1EFD2B2281A3BB5 /* Pods-AsyncSocketServer.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				INFOPLIST_FILE = AsyncSocketServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AsyncSocket.AsyncSocketServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AE73B75F2073BCC3002F1996 /* Release */ = {
+		55D720D52074635700CA3DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 681C8D5CE5510420F6C2BF9B /* Pods-AsyncSocketServer.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				INFOPLIST_FILE = AsyncSocketServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AsyncSocket.AsyncSocketServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -519,11 +635,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE73B75D2073BCC3002F1996 /* Build configuration list for PBXNativeTarget "SocketServer" */ = {
+		55D720D32074635700CA3DB8 /* Build configuration list for PBXNativeTarget "AsyncSocketServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE73B75E2073BCC3002F1996 /* Debug */,
-				AE73B75F2073BCC3002F1996 /* Release */,
+				55D720D42074635700CA3DB8 /* Debug */,
+				55D720D52074635700CA3DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,4 +20,6 @@
 
 - (void)sendText:(NSString *)txt ;
 
+@property (nonatomic ,copy)void (^receiveMessage)(NSString * msg) ;
+
 @end
